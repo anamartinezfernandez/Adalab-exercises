@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  overflow: hidden; /*para ocultar*/
+  background-color: coral;
+}
+
+.container:hover .popup {
+  transform: translate(50vw, 50vh);
+} /*hacemos una clase compuesta*/
+
+.popup {
+  display: inline-block;
+  padding: 10px;
+  transform: translate(50vw, 110vh); /*110 para que se salga del contenedor*/
+  position: relative; /*para centrar, si usamos un margin es sobre el contentedor. Si hubieramos hecho en el transform translate un 50% hubiera sido sobre si mismo. También podríamos haber usado flex en el contenedor*/
+  margin-top: -17.5px;
+  margin-left: -38.5px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: red;
+  border: none;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  color: white;
+  transition: transform 1s ease;
+}

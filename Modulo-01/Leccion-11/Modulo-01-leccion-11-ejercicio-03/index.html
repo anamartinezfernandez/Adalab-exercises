@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Facebook</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <h1>Create an account</h1>
+    <p>It's free and always will be</p>
+    <form action="/signup" method="POST">
+      <!--<label for="firstName"></label> -->
+      <input
+        type="text"
+        id="firstName"
+        name="firstName"
+        placeholder="First name"
+      />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Email or mobile number"
+      />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Re-enter email or mobile number"
+      />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="New password"
+      />
+      <fieldset>
+        <legend>Birthday</legend>
+        <select id="day" name="day">
+          <option value="default">Day</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+        <select id="month" name="month">
+          <option value="default">Month</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+        <select id="year" name="year">
+          <!--value="day"-->
+          <option value="default">Year</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+      </fieldset>
+      <div class="gender">
+        <!--cómo cambio el lugar de los botones-->
+        <label for="gender1"
+          >Female
+          <input type="radio" id="gender1" name="gender" value="female" />
+        </label>
+        <label for="gender2"
+          >Male
+          <input type="radio" id="gender2" name="gender" value="male" />
+        </label>
+      </div>
+      <input type="submit" value="Create an account" />
+      <span class="containerTerminos">
+        <input class="button" type="checkbox" id="check" name="check" />
+        <p class="terminos">
+          By checking Create an account you agree to our Terms and that you have
+          read out Data Policy, including our Cookie Use.
+        </p>
+      </span>
+    </form>
+  </body>
+</html>
+
+<!--hay dos campos que da opciones de email o teléfono, ¿cómo hacemos? Pondríamos text-->
+<!--donde se meten las anotaciones-->
+<!--la casilla de aceptar condiciones también va dentro de form-->

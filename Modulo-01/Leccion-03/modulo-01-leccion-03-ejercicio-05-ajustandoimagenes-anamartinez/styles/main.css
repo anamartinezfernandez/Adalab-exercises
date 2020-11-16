@@ -1,0 +1,17 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  padding: 10px;
+  border: 5px solid black;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+ 
+.imagen {
+  width: 100px;
+  height: 100px;
+
+
+/*cuando cambiamos el modelo de caja de content-box, que no está incluido el border ni el padding, a border-box, en los que si, el cuadrado se hace más pequeño porque en width y height ya se incluyen estos otros dos elementos, y por lo tanto la imagen se sale de la caja*/

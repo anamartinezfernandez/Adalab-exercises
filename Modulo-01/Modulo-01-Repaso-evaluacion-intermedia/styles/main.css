@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+/*esto lo ponemos mejor a todo *, no solo al body. esto no se hereda a posteriori. Hay que pensar que nos interesa que se hereda, por ejemplo la fuente y el color si se heredan y lo ponemos en el body, el margen no nos interesa así que lo ponemos en el asterisco*/
+
+body {
+  font-family: Montserrat, sans-serif;
+}
+/*MAIN*/
+.main {
+  /*como es elemento en bloque ocupa el 100% del ancho de la ventana*/
+  height: 100vh; /*ocupa toda la ventana, va por debajo del footer*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /*podríamos hacer dos elementos h1 y h2 o span dentro de h1del título y luego flex direction column (en el último caso sobre h1)*/
+}
+
+.title {
+  font-weight: bold;
+  text-align: center;
+  color: red;
+}
+
+.title-inner {
+  display: block;
+}
+
+/*FOOTER*/
+.footer {
+  /* background-color: green;*/
+  position: fixed; /*siempre después de position ponerle un bottom, top, etc*/
+  bottom: 0;
+  width: 100%; /*se va a adaptar a su contenedor*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: red solid 2px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  transform: translate(0, -50%);
+}
+.copy {
+  position: relative;
+  top: -30px;
+  /*podemos usar transform translate, margen negativo, posición relativa*/
+}
+
+@media all and (min-width: 768px) {
+  .footer {
+    padding: /*no margen porque es exterior*/ 20px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    transform: translate (0, 0); /*ALGO VA MAL AQUÍ QUE NO BAJA*/
+  }
+  .copy {
+    position: static; /*la posición relativa que había hay que quitárselo*/
+    top: 0;
+  }
+}

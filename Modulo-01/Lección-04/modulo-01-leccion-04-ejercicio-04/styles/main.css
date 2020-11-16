@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  background-color: blue;
+  margin: 40px solid black;
+  display: flex;
+  justify-content: center;
+  align-content: space-center;
+  flex-wrap: wrap; /*porque no sobra espacio*/
+  text-align: justify;
+}
+.noticia1 {
+  width: 100%;
+  border: 2px solid black;
+  padding: 20px;
+  order: -1; /*la pone la primera*/
+}
+.noticia2,
+.noticia3 {
+  width: 50%;
+  padding: 20px;
+  border: 2px solid black;
+}
+.noticia4,
+.noticia5 {
+  width: 50%;
+  padding: 20px;
+  border: 2px solid black;
+}
+img {
+  width: 100%;
+}

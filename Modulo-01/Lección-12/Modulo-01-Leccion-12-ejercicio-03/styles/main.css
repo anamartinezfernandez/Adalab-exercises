@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 100px 1fr 100px;
+  background-color: violet;
+}
+
+.header {
+  background-color: pink;
+  grid-row: 1/2;
+  grid-column: span 12;
+  font-size: 40px;
+  text-align: center;
+}
+
+.menu {
+  background-color: blue;
+  grid-row: 2/3;
+  grid-column: 1/5;
+  text-align: center;
+  font-size: 40px;
+}
+
+.content {
+  background-color: salmon;
+  grid-row: 2/3;
+  grid-column: 5/13;
+  text-align: center;
+  font-size: 40px;
+}
+
+.footer {
+  background-color: green;
+  grid-row: 3/4;
+  grid-column: span 12;
+  text-align: center;
+  font-size: 40px;
+}

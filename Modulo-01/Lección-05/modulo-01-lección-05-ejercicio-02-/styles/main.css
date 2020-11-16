@@ -1,0 +1,34 @@
+.divpadre {
+  border: black solid 2px;
+  background: blue;
+}
+.div1 {
+  height: 300px;
+  width: 300px;
+  padding: 30px;
+  margin: 40px;
+  background-color: green;
+  position: relative;
+  left: 100px;
+  top: 50px;
+}
+.div2 {
+  height: 300px;
+  width: 300px;
+  padding: 30px;
+  margin: 40px;
+  background-color: blueviolet;
+  position: relative;
+  bottom: 320px;
+  right: 150px;
+}
+.div3 {
+  height: 300px;
+  width: 300px;
+  padding: 30px;
+  margin: 40px;
+  background-color: greenyellow;
+  position: relative;
+  left: 180px;
+  bottom: 240px;
+}

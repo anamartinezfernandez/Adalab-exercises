@@ -1,0 +1,5 @@
+.links {
+  color: red;
+}
+
+/*los enlaces no cambian a rojo porque es una etiqueta más específica la de la ID*/

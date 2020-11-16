@@ -1,0 +1,14 @@
+.lista {
+  color: black;
+  background: violet;
+  border: 4px black solid;
+}
+/*la lista es un elemento en bloque*/
+li {
+  border: 4px black solid;
+  list-style: none;
+  display: inline-block;
+  margin: 0 12px 0 0;
+}
+/*si pasamos elementos bloque a inline block podemos cambiarles los márgenes, y cambiamos márgen derecho para poner espacio entre ellos*/
+/*si pones display: inline y un padding 0 12 0 12*/
